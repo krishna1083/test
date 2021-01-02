@@ -7,7 +7,7 @@ import org.junit.Test;
 public class SampleTest {
 	@Test
 	public void SampleTestHappyFlow(){
-		assertEquals("wel".length(), 5);
+		assertEquals("welco".length(), 5);
 	}
 
 }
