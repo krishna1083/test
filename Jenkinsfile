@@ -57,7 +57,7 @@ pipeline{
             
         stage("Dev-Evn-Deploy-Approval"){
             steps{
-                echo "Taking approval from TAL manager for Dev deploy"
+                echo "Taking approval from Dev manager for Dev deploy"
                 timeout(time: 7, unit: 'DAYS') {
                 input message: "Do you want to deploy in to Dev?", submitter: 'admin'
                 
