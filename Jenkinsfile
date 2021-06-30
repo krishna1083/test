@@ -41,7 +41,7 @@ pipeline{
             steps{
                 sshagent(['deploy_user']) {
 
-    // scp <src_file> username@IP:<dest_path>
+    // scp <src_file> username@IP:<dest_path>>
 
                     sh "scp -o StrictHostKeyChecking=no target/vprofile-v1.war ubuntu@172.31.42.74:/opt/apache/webapps" 
                     
