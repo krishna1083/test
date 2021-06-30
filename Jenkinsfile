@@ -1,3 +1,4 @@
+currentBuild.displayName = "vprofile-v1-#"+currentBuild.number
 pipeline{
     agent any 
     stages{
