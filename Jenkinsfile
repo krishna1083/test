@@ -48,17 +48,17 @@ pipeline{
             }
             }
         
-        stage("Dev-Build-Status-Natification"){
+        stage("TAL-Build-Status-Natification"){
             steps{
                 slackSend channel: 'pipe-lines', message: 'Tal-Deployment was Successful'
             }
         }    
             
-        stage("TAL-Evn-Deploy-Approval"){
+        stage("Dev-Evn-Deploy-Approval"){
             steps{
-                echo "Taking approval from Dev manager for QA deploy"
+                echo "Taking approval from TAL manager for Dev deploy"
                 timeout(time: 7, unit: 'DAYS') {
-                input message: "Do you want to deploy in to QA?", submitter: 'admin'
+                input message: "Do you want to deploy in to Dev?", submitter: 'admin'
                 
                 }
             }
