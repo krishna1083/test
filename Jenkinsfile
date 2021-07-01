@@ -67,7 +67,7 @@ pipeline{
           
         stage("Dev-Build-Status-Natification"){
             steps{
-                slackSend channel: 'pipe-lines', message: 'TAL-Deployment was Successful, Please start your testing'
+                slackSend channel: 'pipe-lines', message: 'Dev-Deployment was Successful, Please start your testing'
             }
         }     
             
